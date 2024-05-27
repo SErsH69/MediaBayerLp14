@@ -1,0 +1,235 @@
+.main_first {
+  padding-top: vw(82);
+  position: relative;
+  @media all and (max-width: 1023px) {
+    padding-top: 32px;
+  }
+  &__in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media all and (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+  &__l-side {
+    flex: 0 0 vw(772);
+    margin-right: vw(68);
+    @media all and (max-width: 1023px) {
+      flex: none;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  &__flag {
+    font-weight: 500;
+    font-size: vw(18);
+    line-height: 100%;
+    color: var(--gray);
+    display: inline-block;
+    border: 0.6px solid var(--gray);
+    border-radius: 32px;
+    padding: vw(12) vw(24);
+    margin-bottom: vw(16);
+    background: #f7f7fa;
+    @media all and (max-width: 1023px) {
+      font-size: 14px;
+      border-radius: 32px;
+      padding: 12px 24px;
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    margin-bottom: vw(8);
+    color: var(--Black, #fff);
+    font-size: vw(56);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    @media all and (max-width: 1023px) {
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+  }
+  &__text {
+    color: var(--light-gray-2);
+    font-size: vw(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: vw(540);
+    @media all and (max-width: 1023px) {
+      margin-bottom: 45px;
+      font-size: 14px;
+      max-width: 100%;
+    }
+  }
+  &__btn {
+    margin-top: vw(52);
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: vw(16);
+    border: 0;
+    background: none;
+    color: var(--gold-2);
+    padding-right: vw(76);
+    cursor: pointer;
+    @media all and (max-width: 1023px) {
+      font-size: 16px;
+      padding-right: 76px;
+      margin-bottom: 60px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: vw(52);
+      height: vw(52);
+      margin-top: vw(-26);
+      background: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66797 16.0001H25.3346M25.3346 16.0001L16.0013 6.66675M25.3346 16.0001L16.0013 25.3334' stroke='white' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E")
+        50% no-repeat;
+      background-size: vw(32) !important;
+      border: 0.6px solid var(--white);
+      border-radius: 50%;
+      @media all and (max-width: 1023px) {
+        width: 52px;
+        height: 52px;
+        margin-top: -26px;
+        background-size: 32px !important;
+      }
+    }
+    &:hover {
+      &:before {
+        border-color: var(--gold-2);
+        background: var(--gold-2)
+          url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66797 16.0001H25.3346M25.3346 16.0001L16.0013 6.66675M25.3346 16.0001L16.0013 25.3334' stroke='white' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E")
+          50% no-repeat;
+        transform: rotate(-45deg);
+      }
+    }
+    &:active {
+      color: #9a8133;
+      &:before {
+        border-color: #9a8133;
+        background: #9a8133
+          url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66797 16.0001H25.3346M25.3346 16.0001L16.0013 6.66675M25.3346 16.0001L16.0013 25.3334' stroke='white' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E")
+          50% no-repeat;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__r-side {
+    width: 100%;
+    font-size: 0;
+    pointer-events: none;
+    position: relative;
+    z-index: 3;
+    @media all and (max-width: 1023px) {
+      max-width: 262px;
+      width: 100%;
+      right: 0;
+      margin-left: auto;
+      margin-bottom: -50px;
+      margin-right: auto;
+    }
+    img {
+      max-width: vw(443);
+      position: relative;
+      margin-bottom: vw(-57);
+      @media all and (max-width: 1023px) {
+        max-width: 100%;
+        position: unset;
+        margin-bottom: 0;
+      }
+    }
+    @media all and (max-width: 1023px) {
+      position: relative;
+      bottom: unset;
+      max-width: 100%;
+      margin-left: auto;
+      text-align: right;
+      max-width: 320px;
+    }
+  }
+}
+.main_prf {
+  position: relative;
+  z-index: 3;
+  &__in {
+    border: 1px solid var(--gold-2);
+    border-radius: 16px;
+    background: var(--black);
+    padding: vw(40) vw(32);
+    @media all and (max-width: 1023px) {
+      padding: 32px 44px;
+    }
+  }
+  &__title {
+    color: var(--white, #fff);
+    font-size: vw(40);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    margin-bottom: vw(32);
+    @media all and (max-width: 1023px) {
+      font-size: 32px;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+  &__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    @media all and (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+  &__block {
+    width: 25%;
+    text-align: center;
+    @media all and (max-width: 1023px) {
+      width: 100%;
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
+    &:first-child {
+      text-align: left;
+      @media all and (max-width: 1023px) {
+        text-align: center;
+      }
+    }
+    &:not(:last-child) {
+      border-right: 1px solid var(--gold);
+      @media all and (max-width: 1023px) {
+        border-right: 0;
+        border-bottom: 1px solid var(--gold);
+      }
+    }
+    &--title {
+      color: var(--white);
+      font-family: var(--font7);
+      font-size: vw(40);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      margin-bottom: vw(8);
+      @media all and (max-width: 1023px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+    }
+    &--text {
+      color: var(--light-gray);
+      font-family: "Gilroy", sans-serif, cursive;
+      font-size: vw(24);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 98%;
+      @media all and (max-width: 1023px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
